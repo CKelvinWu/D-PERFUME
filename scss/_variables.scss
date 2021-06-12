@@ -1,4 +1,9 @@
 $brown: #916019;
-$gray: #8D8D8D;
-$lightgray: #E0E0E0;
+$gray: #8d8d8d;
+$lightgray: #e0e0e0;
 $darkgray: #707070;
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("../fonts/SF-Pro-Text-Regular.otf") format("opentype");
+}

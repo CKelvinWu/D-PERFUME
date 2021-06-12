@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../fonts/SF-Pro-Text-Regular.otf") format("opentype");
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,6 +71,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "SF Pro Text";
+}
+
 .header {
   max-width: 1110px;
   margin: 0 auto;
@@ -111,7 +120,7 @@ a {
 }
 
 .nav li a:hover {
-  border-bottom: 4px solid #8D8D8D;
+  border-bottom: 4px solid #8d8d8d;
   margin-bottom: -4px;
 }
 
@@ -123,7 +132,7 @@ a {
   display: block;
   line-height: 24px;
   white-space: nowrap;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 
 .nav-mobile {
@@ -153,7 +162,7 @@ a {
     padding: 7px 0;
   }
   .nav-mobile li a:hover {
-    border-bottom: 4px solid #8D8D8D;
+    border-bottom: 4px solid #8d8d8d;
     margin-bottom: -4px;
   }
   .nav-mobile li a img {
@@ -489,7 +498,7 @@ a {
 }
 
 .bg-gray {
-  background: #E0E0E0;
+  background: #e0e0e0;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -691,7 +700,7 @@ a {
 }
 
 .bg-gray-container li .cancel-price {
-  color: #8D8D8D;
+  color: #8d8d8d;
   text-decoration: line-through;
   line-height: 24px;
   padding-left: 8px;
@@ -795,14 +804,14 @@ a {
 }
 
 .foot-banner-container p {
-  color: #8D8D8D;
+  color: #8d8d8d;
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
 }
 
 .input-email {
-  color: #8D8D8D;
+  color: #8d8d8d;
   width: 219px;
   border-radius: 4px 0 0 4px;
   padding: 21px 16px;
