@@ -296,6 +296,17 @@ body {
   color: #000;
 }
 
+.product-list li .item span {
+  display: none;
+}
+
+.product-list li .item .sale {
+  display: inline-block;
+  color: #8d8d8d;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
 .product-list li .item:hover {
   border: 2px solid #916000;
   margin: -2px;
@@ -308,12 +319,6 @@ body {
 
 .price {
   display: inline-block;
-}
-
-.sale {
-  color: #8d8d8d;
-  text-decoration: line-through;
-  margin-left: 8px;
 }
 
 .add-fav {

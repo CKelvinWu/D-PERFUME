@@ -48,6 +48,15 @@
                 line-height: 24px;
                 color: #000;
             }
+            span {
+                display: none;
+            }
+            .sale {
+                display: inline-block;
+                color: $gray;
+                text-decoration: line-through;
+                margin-left: 8px;
+            }
             &:hover {
                 div {
                     box-shadow: 5px 5px 10px $gray;
@@ -63,11 +72,7 @@
 .price {
     display: inline-block;
 }
-.sale {
-    color: $gray;
-    text-decoration: line-through;
-    margin-left: 8px;
-}
+
 .add-fav {
     display: inline-block;
     margin-right: 11px;
