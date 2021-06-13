@@ -1,17 +1,19 @@
 body {
-    font-family: "SF Pro Text";
+    font-family: "SF Pro Text", "PingFang";
+}
+.nav-icon {
+    fill: $gray;
 }
 
 .header {
     max-width: 1110px;
+    @include pad {
+        max-width: 92%;
+    }
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 9px 0;
-}
-.logo img {
-    display: block;
-    margin-left: 20px;
 }
 
 .nav {

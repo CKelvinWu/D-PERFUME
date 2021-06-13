@@ -3,6 +3,11 @@
   src: url("../fonts/SF-Pro-Text-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "PingFang";
+  src: url("../fonts/PingFang-TC-Regular-2.otf") format("opentype");
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -72,7 +77,11 @@ a {
 }
 
 body {
-  font-family: "SF Pro Text";
+  font-family: "SF Pro Text", "PingFang";
+}
+
+.nav-icon {
+  fill: #8d8d8d;
 }
 
 .header {
@@ -87,9 +96,10 @@ body {
   padding: 9px 0;
 }
 
-.logo img {
-  display: block;
-  margin-left: 20px;
+@media (max-width: 768px) {
+  .header {
+    max-width: 92%;
+  }
 }
 
 .nav {
@@ -177,7 +187,7 @@ body {
     line-height: 14px;
     display: block;
     color: #fff;
-    background: #916019;
+    background: #916000;
     border-radius: 8px;
     text-align: center;
   }
@@ -556,7 +566,7 @@ body {
 }
 
 .bg-gray-container li .item1 a:hover {
-  border: 2px solid #916019;
+  border: 2px solid #916000;
   -webkit-box-shadow: 10px 10px 10px rgba(141, 141, 141, 0.7);
           box-shadow: 10px 10px 10px rgba(141, 141, 141, 0.7);
 }
@@ -602,7 +612,7 @@ body {
 }
 
 .bg-gray-container li .item2 a:hover {
-  border: 2px solid #916019;
+  border: 2px solid #916000;
   -webkit-box-shadow: 10px 10px 10px rgba(141, 141, 141, 0.7);
           box-shadow: 10px 10px 10px rgba(141, 141, 141, 0.7);
 }
@@ -648,7 +658,7 @@ body {
 }
 
 .bg-gray-container li .item3 a:hover {
-  border: 2px solid #916019;
+  border: 2px solid #916000;
   -webkit-box-shadow: 10px 10px 10px rgba(141, 141, 141, 0.7);
           box-shadow: 10px 10px 10px rgba(141, 141, 141, 0.7);
 }
@@ -815,7 +825,7 @@ body {
   width: 219px;
   border-radius: 4px 0 0 4px;
   padding: 21px 16px;
-  border: 2px solid #916019;
+  border: 2px solid #916000;
   outline: none;
 }
 
@@ -823,16 +833,16 @@ body {
   color: #fff;
   padding: 21px 26px;
   border-radius: 0 4px 4px 0;
-  background: #916019;
+  background: #916000;
   cursor: pointer;
 }
 
 .submit:hover {
-  background: #bd7d21;
+  background: #c48200;
 }
 
 .footer {
-  background: #916019;
+  background: #916000;
 }
 
 .footer-container {
@@ -903,7 +913,7 @@ body {
 }
 
 .footer-container ul li a:hover {
-  background: #bd7d21;
+  background: #c48200;
 }
 
 @media (max-width: 768px) {
