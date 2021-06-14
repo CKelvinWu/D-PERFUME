@@ -369,7 +369,7 @@ body {
 }
 
 .foot-banner {
-  background-image: url("../images/index10.jpg");
+  background: url("../images/index10.jpg") center center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

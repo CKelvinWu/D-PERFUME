@@ -75,7 +75,6 @@
         .intro1 {
             height: 555px;
             width: 50%;
-            height: same-as-width;
             @include pad {
                 width: 100%;
             }
