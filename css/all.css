@@ -134,8 +134,10 @@ body {
   margin-bottom: -4px;
 }
 
-.nav li a img {
+.nav li a i {
   width: 24px;
+  color: #8d8d8d;
+  margin: 3px;
 }
 
 .nav li a span {
@@ -175,14 +177,16 @@ body {
     border-bottom: 4px solid #8d8d8d;
     margin-bottom: -4px;
   }
-  .nav-mobile li a img {
+  .nav-mobile li a i {
     width: 24px;
+    color: #8d8d8d;
+    margin: 3px;
   }
   .nav-mobile li a span {
     width: 16px;
     position: absolute;
-    right: 15px;
-    top: 5px;
+    right: 19px;
+    top: 2px;
     font-size: 12px;
     line-height: 14px;
     display: block;

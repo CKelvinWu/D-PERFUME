@@ -27,6 +27,7 @@
         }
         .item {
             display: block;
+            margin-bottom: 3px;
 
             div {
                 max-height: 255px;
@@ -64,30 +65,34 @@
 
                 border: 2px solid $brown;
                 margin: -2px;
+                margin-bottom: 1px;
             }
+        }
+    }
+    .fa-heart {
+        padding: 2px;
+        font-size: 20px;
+        text-align: center;
+        color: $brown;
+        margin-right: 11px;
+        &:hover {
+            color: darken($brown, 10%);
+        }
+    }
+
+    .fa-shopping-cart {
+        padding: 2px;
+        font-size: 20px;
+        text-align: center;
+        color: $brown;
+        &:hover {
+            color: darken($brown, 10%);
         }
     }
 }
 
 .price {
     display: inline-block;
-}
-
-.add-fav {
-    display: inline-block;
-    margin-right: 11px;
-    &:hover {
-        border: 2px solid $brown;
-        margin: -2px;
-        margin-right: 9px;
-    }
-}
-.add-cart {
-    display: inline-block;
-    &:hover {
-        border: 2px solid $brown;
-        margin: -2px;
-    }
 }
 
 .pages {
