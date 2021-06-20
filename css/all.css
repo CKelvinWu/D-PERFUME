@@ -77,7 +77,7 @@ a {
 }
 
 body {
-  font-family: "SF Pro Text", "PingFang";
+  font-family: "SF Pro Text", "PingFang", sans-serif;
 }
 
 .nav-icon {
