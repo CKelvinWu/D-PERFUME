@@ -370,6 +370,10 @@ a {
   font-size: 24px;
 }
 
+.fz-28 {
+  font-size: 28px;
+}
+
 .fz-30 {
   font-size: 30px;
 }
@@ -407,8 +411,21 @@ a {
   font-weight: bold;
 }
 
-.nav-icon {
-  fill: #8d8d8d;
+.sale {
+  color: #8d8d8d;
+  text-decoration: line-through;
+}
+
+.price {
+  display: inline-block;
+}
+
+.bg-gray {
+  background: #e0e0e0;
+}
+
+.bg-brown {
+  background: #916000;
 }
 
 .nav li a {
@@ -462,71 +479,6 @@ a {
   text-align: center;
 }
 
-.brand-bar {
-  background: #916000;
-}
-
-.brand-bar .brand-bar-list a {
-  color: #fff;
-}
-
-.brand-bar .brand-bar-list a:hover {
-  background: #ac8a46;
-}
-
-.product-list li {
-  max-width: 24%;
-}
-
-@media (max-width: 768px) {
-  .product-list li {
-    max-width: 44%;
-  }
-}
-
-.product-list .fa-heart,
-.product-list .fa-shopping-cart {
-  padding: 2px;
-  color: #916000;
-}
-
-.product-list .fa-heart:hover,
-.product-list .fa-shopping-cart:hover {
-  color: #5e3e00;
-}
-
-.item .item-img {
-  height: 255px;
-  width: 255px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.item .sale {
-  display: inline-block;
-  color: #8d8d8d;
-  text-decoration: line-through;
-}
-
-.item:hover {
-  border: 2px solid #916000;
-  margin: -2px;
-  margin-bottom: 1px;
-}
-
-.price {
-  display: inline-block;
-}
-
-.page:hover {
-  color: #ac8a46;
-  border-bottom: 2px solid #ac8a46;
-}
-
-.active-page {
-  border-bottom: 2px solid #ac8a46;
-}
-
 .foot-banner {
   background: url("../images/index10.jpg") center center;
   background-position: center;
@@ -571,10 +523,6 @@ a {
   background: #c48200;
 }
 
-.footer {
-  background: #916000;
-}
-
 .footer-container {
   color: #fff;
 }
@@ -594,5 +542,60 @@ a {
 
 .footer-container ul li a:hover {
   background: #c48200;
+}
+
+.brand-bar {
+  background: #916000;
+}
+
+.brand-bar .brand-bar-list a {
+  color: #fff;
+}
+
+.brand-bar .brand-bar-list a:hover {
+  background: #ac8a46;
+}
+
+.product-list li {
+  max-width: 24%;
+}
+
+@media (max-width: 768px) {
+  .product-list li {
+    max-width: 44%;
+  }
+}
+
+.product-list .fa-heart,
+.product-list .fa-shopping-cart {
+  padding: 2px;
+  color: #916000;
+}
+
+.product-list .fa-heart:hover,
+.product-list .fa-shopping-cart:hover {
+  color: #5e3e00;
+}
+
+.item .item-img {
+  height: 255px;
+  width: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item:hover {
+  border: 2px solid #916000;
+  margin: -2px;
+  margin-bottom: 1px;
+}
+
+.page:hover {
+  color: #ac8a46;
+  border-bottom: 2px solid #ac8a46;
+}
+
+.active-page {
+  border-bottom: 2px solid #ac8a46;
 }
 /*# sourceMappingURL=productPage.css.map */

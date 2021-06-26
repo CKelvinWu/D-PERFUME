@@ -1,0 +1,108 @@
+.sale {
+    color: $gray;
+    text-decoration: line-through;
+}
+.price {
+    display: inline-block;
+}
+.bg-gray {
+    background: $lightgray;
+}
+.bg-brown {
+    background: $brown;
+}
+.nav {
+    li a {
+        text-align: center;
+        &:hover {
+            border-bottom: 4px solid $gray;
+            padding-bottom: 6px;
+        }
+        i {
+            width: 24px;
+            color: $gray;
+            margin: 3px;
+        }
+        span {
+            line-height: 24px;
+            color: $gray;
+        }
+    }
+}
+
+.nav-mobile li {
+    position: relative;
+    a {
+        width: 72px;
+        &:hover {
+            border-bottom: 4px solid $gray;
+            margin-bottom: -4px;
+        }
+        i {
+            width: 24px;
+            color: $gray;
+            margin: 3px;
+        }
+        span {
+            width: 16px;
+            position: absolute;
+            right: 19px;
+            top: 2px;
+            line-height: 14px;
+            color: #fff;
+            background: $brown;
+            border-radius: 8px;
+            text-align: center;
+        }
+    }
+}
+
+.foot-banner {
+    @include background-img("../images/index10.jpg");
+    height: 600px;
+    .container {
+        height: 100%;
+        @include pad {
+            align-items: center;
+        }
+        p {
+            color: $gray;
+        }
+    }
+}
+.input-email {
+    color: $gray;
+    width: 219px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid $brown;
+    outline: none;
+}
+.submit {
+    color: #fff;
+    border: 2px solid $brown;
+    border-radius: 0 4px 4px 0;
+    background: $brown;
+    cursor: pointer;
+    &:hover {
+        background: lighten($brown, 10%);
+    }
+}
+
+.footer-container {
+    color: #fff;
+    .logo {
+        @include pad {
+            justify-content: space-between;
+        }
+    }
+
+    ul {
+        li a {
+            color: #fff;
+            border-radius: 5px;
+            &:hover {
+                background: lighten($brown, 10%);
+            }
+        }
+    }
+}

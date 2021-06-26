@@ -21,20 +21,11 @@
         width: 255px;
         object-fit: cover;
     }
-    .sale {
-        display: inline-block;
-        color: $gray;
-        text-decoration: line-through;
-    }
     &:hover {
         border: 2px solid $brown;
         margin: -2px;
         margin-bottom: 1px;
     }
-}
-
-.price {
-    display: inline-block;
 }
 
 .page {
