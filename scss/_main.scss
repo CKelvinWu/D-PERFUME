@@ -101,7 +101,7 @@
 .item3 {
     @include background-img("../images/index8.jpg");
 }
-.bg-gray-container li {
+.bg-lightgray-container li {
     width: 31.5%;
     @include pad {
         width: 100%;

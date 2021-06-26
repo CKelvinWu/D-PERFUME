@@ -5,8 +5,11 @@
 .price {
     display: inline-block;
 }
-.bg-gray {
+.bg-lightgray {
     background: $lightgray;
+}
+.bg-darkgray {
+    background: $darkgray;
 }
 .bg-brown {
     background: $brown;
@@ -53,6 +56,27 @@
             background: $brown;
             border-radius: 8px;
             text-align: center;
+        }
+    }
+}
+
+.dropdown {
+    max-height: 0;
+    transition: all 0.8s;
+    overflow: hidden;
+    width: 100%;
+    &-active {
+        max-height: 0;
+        @include pad {
+            max-height: 280px;
+        }
+    }
+    li a {
+        text-align: center;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        &:hover {
+            background: lighten($darkgray, 20%);
         }
     }
 }
