@@ -1,33 +1,30 @@
-body {
-    font-family: "SF Pro Text", "PingFang", sans-serif;
-}
 .nav-icon {
     fill: $gray;
 }
 
-.header {
-    max-width: 1110px;
-    @include pad {
-        max-width: 92%;
+.nav {
+    li a {
+        text-align: center;
+        &:hover {
+            border-bottom: 4px solid $gray;
+            padding-bottom: 6px;
+        }
+        i {
+            width: 24px;
+            color: $gray;
+            margin: 3px;
+        }
+        span {
+            line-height: 24px;
+            color: $gray;
+        }
     }
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 9px 0;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    @include pad {
-        display: none;
-    }
-    li a {
-        padding: 10px 30px;
-        font-size: 20px;
-        line-height: 24px;
-        display: flex;
-        align-items: center;
+.nav-mobile li {
+    position: relative;
+    a {
+        width: 72px;
         &:hover {
             border-bottom: 4px solid $gray;
             margin-bottom: -4px;
@@ -38,49 +35,15 @@ body {
             margin: 3px;
         }
         span {
-            display: block;
-            line-height: 24px;
-            white-space: nowrap;
-            color: $gray;
-        }
-    }
-}
-
-.nav-mobile {
-    display: none;
-    @include pad {
-        display: flex;
-        align-items: center;
-        li {
-            position: relative;
-            a {
-                width: 72px;
-                display: flex;
-                justify-content: center;
-                padding: 7px 0;
-                &:hover {
-                    border-bottom: 4px solid $gray;
-                    margin-bottom: -4px;
-                }
-                i {
-                    width: 24px;
-                    color: $gray;
-                    margin: 3px;
-                }
-                span {
-                    width: 16px;
-                    position: absolute;
-                    right: 19px;
-                    top: 2px;
-                    font-size: 12px;
-                    line-height: 14px;
-                    display: block;
-                    color: #fff;
-                    background: $brown;
-                    border-radius: 8px;
-                    text-align: center;
-                }
-            }
+            width: 16px;
+            position: absolute;
+            right: 19px;
+            top: 2px;
+            line-height: 14px;
+            color: #fff;
+            background: $brown;
+            border-radius: 8px;
+            text-align: center;
         }
     }
 }

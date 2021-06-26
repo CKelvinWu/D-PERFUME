@@ -1,93 +1,35 @@
-.product {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 60px;
-    @include pad {
-        padding-top: 5px;
-        max-width: 92%;
+.product-list {
+    li {
+        max-width: 24%;
+        @include pad {
+            max-width: 44%;
+        }
+    }
+    .fa-heart,
+    .fa-shopping-cart {
+        padding: 2px;
+        color: $brown;
+        &:hover {
+            color: darken($brown, 10%);
+        }
     }
 }
 
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    @include pad {
-        justify-content: space-between;
-        margin-right: 0;
+.item {
+    .item-img {
+        height: 255px;
+        width: 255px;
+        object-fit: cover;
     }
-    li {
-        max-width: 255px;
-        margin-bottom: 58px;
-        margin-left: 30px;
-        @include pad {
-            width: 50%;
-            margin-right: 0px;
-        }
-        .item {
-            display: block;
-            margin-bottom: 3px;
-
-            div {
-                max-height: 255px;
-                max-width: 255px;
-                overflow: hidden;
-                .item-img {
-                    margin-top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-
-            h3 {
-                color: #000;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 36px;
-            }
-            p {
-                line-height: 24px;
-                color: #000;
-            }
-            span {
-                display: none;
-            }
-            .sale {
-                display: inline-block;
-                color: $gray;
-                text-decoration: line-through;
-                margin-left: 8px;
-            }
-            &:hover {
-                div {
-                    box-shadow: 5px 5px 10px $gray;
-                }
-
-                border: 2px solid $brown;
-                margin: -2px;
-                margin-bottom: 1px;
-            }
-        }
+    .sale {
+        display: inline-block;
+        color: $gray;
+        text-decoration: line-through;
     }
-    .fa-heart {
-        padding: 2px;
-        font-size: 20px;
-        text-align: center;
-        color: $brown;
-        margin-right: 11px;
-        &:hover {
-            color: darken($brown, 10%);
-        }
-    }
-
-    .fa-shopping-cart {
-        padding: 2px;
-        font-size: 20px;
-        text-align: center;
-        color: $brown;
-        &:hover {
-            color: darken($brown, 10%);
-        }
+    &:hover {
+        border: 2px solid $brown;
+        margin: -2px;
+        margin-bottom: 1px;
     }
 }
 
@@ -95,23 +37,12 @@
     display: inline-block;
 }
 
-.pages {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-
-    .page {
-        display: block;
-        color: #000;
-        font-size: 20px;
-        line-height: 30px;
-        padding: 0 10px;
-        &:hover {
-            color: $lightbrown;
-            border-bottom: 2px solid $lightbrown;
-        }
-    }
-    .active-page {
+.page {
+    &:hover {
+        color: $lightbrown;
         border-bottom: 2px solid $lightbrown;
     }
+}
+.active-page {
+    border-bottom: 2px solid $lightbrown;
 }

@@ -1,117 +1,60 @@
 .banner {
+    height: 870px;
     @include background-img("../images/index1.jpg");
-    display: flex;
-    justify-content: flex-end;
     @include pad {
-        justify-content: center;
+        height: 480px;
     }
-    .slogen {
-        color: #fff;
-        width: 445px;
-        padding-top: 26.78%;
-        padding-bottom: 26.78%;
-        margin-right: 21.09%;
-        @include pad {
-            width: 345px;
-            margin: 0 auto;
-        }
-        h2 {
-            font-size: 40px;
-            font-weight: bold;
-            line-height: 60px;
-            white-space: nowrap;
+    .container {
+        height: 100%;
+        .slogen {
+            color: #fff;
+            width: 445px;
             @include pad {
-                font-size: 32px;
-                line-height: 48px;
+                width: 345px;
+                margin: 0 auto;
             }
-        }
-        p {
-            font-size: 24px;
-            line-height: 36px;
-            padding-bottom: 16px;
-            @include pad {
-                font-size: 20px;
-                line-height: 30px;
+            h2 {
+                white-space: nowrap;
             }
-        }
-        a {
-            display: inline-block;
-            font-size: 40px;
-            padding: 10px;
-            @include btn-style(350px, #fff);
-            @include pad {
-                font-size: 28px;
+            a {
+                padding: 10px;
+                @include btn-style(350px, #fff);
             }
         }
     }
 }
 
-//content style
-.row {
-    display: flex;
-    .content {
-        display: flex;
-        align-items: center;
-    }
-    &:nth-child(2n + 1) {
-        flex-direction: row-reverse;
-    }
+.intro-img {
+    padding-top: 50%;
+    width: 50%;
     @include pad {
-        &:nth-child(2n + 1) {
-            flex-direction: row;
-        }
-        flex-wrap: wrap;
+        padding-top: 100%;
+        width: 100%;
     }
 }
 
-.intro {
-    padding: 60px 0;
-    max-width: 1110px;
+.intro1 {
+    @include background-img("../images/index2.jpg");
+}
+.intro2 {
+    @include background-img("../images/index3.png");
+}
+.intro3 {
+    @include background-img("../images/index4.jpg");
+    background-position: left;
+}
+.intro4 {
+    @include background-img("../images/index5.jpg");
+    padding-top: 100%;
     @include pad {
-        max-width: 92%;
+        padding-top: 200%;
     }
-    margin: 0 auto;
-    .row {
-        .intro1 {
-            height: 555px;
-            width: 50%;
-            @include pad {
-                width: 100%;
-            }
-            @include background-img("../images/index2.jpg");
-        }
-        .intro2 {
-            height: 555px;
-            width: 50%;
-            @include pad {
-                width: 100%;
-            }
-            @include background-img("../images/index3.png");
-        }
-        .intro3 {
-            height: 555px;
-            width: 50%;
-            height: same-as-width;
-            @include pad {
-                width: 100%;
-            }
-            @include background-img("../images/index4.jpg");
-            background-position: left;
-        }
-        .intro4 {
-            width: 50%;
-            @include pad {
-                width: 100%;
-                height: 680px;
-            }
-            @include background-img("../images/index5.jpg");
-        }
-        .content {
-            width: 50%;
-            @include pad {
-                width: 100%;
-            }
-        }
+}
+
+.content {
+    width: 50%;
+    @include pad {
+        width: 100%;
     }
 }
 
@@ -121,207 +64,73 @@
     @include pad {
         width: 100%;
     }
-    h2 {
-        font-size: 30px;
-        line-height: 48px;
-        font-weight: bold;
+    .btn {
+        @include btn-style(350px, #000);
         @include pad {
-            font-size: 32px;
-            margin-top: 8px;
-        }
-    }
-    p {
-        font-size: 20px;
-        line-height: 30px;
-        margin-bottom: 16px;
-        @include pad {
-            margin-bottom: 8px;
-        }
-    }
-    .more {
-        @include more;
-        @include pad {
-            margin-bottom: 32px;
+            width: 100%;
         }
     }
 }
-
-.row4 {
-    .content-container {
-        padding-top: 92px;
-        padding-bottom: 92px;
-        @include pad {
-            padding-top: 8px;
-            padding-bottom: 40px;
-        }
-        p {
-            margin-bottom: 52px;
-            @include pad {
-                margin-bottom: 20px;
-            }
-        }
-
-        h3 {
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 36px;
-            margin-bottom: 4px;
-        }
-        .btn {
-            display: block;
-            @include btn-style(350px, #000);
-            @include pad {
-                @include btn-style(100%, #000);
-                font-size: 20px;
-            }
-        }
-    }
+.more {
+    @include more;
 }
 
 .bg-gray {
     background: $lightgray;
-    padding-top: 40px;
-    padding-bottom: 40px;
+}
+
+.sold-out {
+    @include sold-out();
+}
+
+.item {
+    height: 540px;
+    a {
+        width: 100%;
+        height: 100%;
+        &:hover {
+            border: 2px solid $brown;
+            box-shadow: 10px 10px 10px rgba($gray, 0.7);
+        }
+    }
     @include pad {
-        padding-top: 32px;
-        padding-bottom: 36px;
+        background-size: 100% 100%;
     }
 }
-.bg-gray-container {
-    margin: 0 auto;
-    max-width: 1110px;
-    display: flex;
-    justify-content: space-between;
+.item1 {
+    @include background-img("../images/index6.jpg");
+}
+.item2 {
+    @include background-img("../images/index7.jpg");
+}
+.item3 {
+    @include background-img("../images/index8.jpg");
+}
+.bg-gray-container li {
+    width: 31.5%;
     @include pad {
-        flex-direction: column;
-        max-width: 92%;
+        width: 100%;
     }
-    li {
-        width: 31.5%;
-        @include pad {
-            width: 100%;
-        }
-        .item1 {
-            height: 540px;
-            @include background-img("../images/index6.jpg");
-            a {
-                width: 100%;
-                height: 100%;
-                display: block;
-                &:hover {
-                    border: 2px solid $brown;
-                    box-shadow: 10px 10px 10px rgba($gray, 0.7);
-                }
-                .sold-out {
-                    @include sold-out();
-                    display: none;
-                }
-            }
-            @include pad {
-                background-size: 100% 100%;
-                margin-bottom: 4px;
-            }
-        }
-        .item2 {
-            height: 540px;
-            @include background-img("../images/index7.jpg");
-            a {
-                width: 100%;
-                height: 100%;
-                display: block;
-                &:hover {
-                    border: 2px solid $brown;
-                    box-shadow: 10px 10px 10px rgba($gray, 0.7);
-                }
-                .sold-out {
-                    @include sold-out();
-                    display: none;
-                }
-            }
-            @include pad {
-                background-size: 100% 100%;
-                margin-bottom: 4px;
-            }
-        }
-        .item3 {
-            height: 540px;
-            @include background-img("../images/index8.jpg");
-            a {
-                width: 100%;
-                height: 100%;
-                display: block;
-                &:hover {
-                    border: 2px solid $brown;
-                    box-shadow: 10px 10px 10px rgba($gray, 0.7);
-                }
-                .sold-out {
-                    @include sold-out();
-                }
-                @include pad {
-                    background-size: 100% 100%;
-                    margin-bottom: 4px;
-                }
-            }
-        }
-        h3 {
-            font-size: 24px;
-            font-weight: bold;
-            line-height: 36px;
-        }
-        .brand {
-            line-height: 24px;
-            margin-bottom: 16px;
-            @include pad {
-                margin-bottom: 4px;
-            }
-        }
-        .price {
-            display: inline-block;
-        }
-        .cancel-price {
-            color: $gray;
-            text-decoration: line-through;
-            line-height: 24px;
-            padding-left: 8px;
-            @include pad {
-                padding-left: 6px;
-            }
-        }
+    .price {
+        display: inline-block;
+    }
+    .cancel-price {
+        color: $gray;
+        text-decoration: line-through;
     }
 }
 
-.recycle {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    max-width: 1110px;
-    margin: 0 auto;
+.recycle-img {
+    @include background-img("../images/index9.jpg");
+    width: 65.77%;
     @include pad {
-        max-width: 92%;
+        width: 100%;
+        height: 520px;
     }
-    .row {
-        justify-content: space-between;
-        flex-direction: row;
-        .recycle-img {
-            @include background-img("../images/index9.jpg");
-            width: 65.77%;
-            @include pad {
-                width: 100%;
-                height: 520px;
-            }
-        }
-        .content {
-            width: 31.5%;
-            @include pad {
-                width: 100%;
-            }
-            .content-container {
-                padding-top: 82px;
-                padding-bottom: 82px;
-                @include pad {
-                    padding-top: 8px;
-                    padding-bottom: 40px;
-                }
-            }
-        }
+}
+.recycle-content {
+    width: 31.5%;
+    @include pad {
+        width: 100%;
     }
 }

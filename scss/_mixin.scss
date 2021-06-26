@@ -1,6 +1,5 @@
 @mixin more {
     color: $lightbrown;
-    line-height: 24px;
     &:hover {
         font-weight: bold;
     }
@@ -28,12 +27,7 @@
 @mixin sold-out {
     background: rgba($gray, 0.5);
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
-    font-size: 24px;
-    line-height: 36px;
     text-align: center;
 }
 
