@@ -14,6 +14,7 @@
 .bg-brown {
     background: $brown;
 }
+
 .nav {
     li a {
         text-align: center;
@@ -78,6 +79,13 @@
         &:hover {
             background: lighten($darkgray, 20%);
         }
+    }
+}
+
+.brand-bar-list a {
+    color: #fff;
+    &:hover {
+        background: $lightbrown;
     }
 }
 

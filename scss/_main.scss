@@ -78,7 +78,7 @@
     @include sold-out();
 }
 
-.item {
+.promote-item {
     height: 540px;
     a {
         width: 100%;
@@ -92,13 +92,13 @@
         background-size: 100% 100%;
     }
 }
-.item1 {
+.promote-item1 {
     @include background-img("../images/index6.jpg");
 }
-.item2 {
+.promote-item2 {
     @include background-img("../images/index7.jpg");
 }
-.item3 {
+.promote-item3 {
     @include background-img("../images/index8.jpg");
 }
 .bg-lightgray-container li {
@@ -120,5 +120,80 @@
     width: 31.5%;
     @include pad {
         width: 100%;
+    }
+}
+
+.product-list {
+    li {
+        max-width: 24%;
+        @include pad {
+            max-width: 44%;
+        }
+    }
+    .fa-heart,
+    .fa-shopping-cart {
+        padding: 2px;
+        color: $brown;
+        &:hover {
+            color: darken($brown, 10%);
+        }
+    }
+}
+
+.item {
+    .item-img {
+        height: 255px;
+        width: 255px;
+        object-fit: cover;
+    }
+    &:hover {
+        border: 2px solid $brown;
+        margin: -2px;
+        margin-bottom: 1px;
+    }
+}
+
+.page {
+    &:hover {
+        color: $lightbrown;
+        border-bottom: 2px solid $lightbrown;
+    }
+}
+.active-page {
+    border-bottom: 2px solid $lightbrown;
+}
+.login-banner {
+    @include background-img("../images/login1.jpg");
+    padding-top: 50%;
+    width: 65.8%;
+    @include pad {
+        width: 100%;
+    }
+}
+
+.login {
+    width: 31.53%;
+    @include pad {
+        width: 100%;
+    }
+}
+
+.account,
+.password {
+    width: 100%;
+    line-height: 19px;
+    color: $info;
+    border: 1px solid $info;
+}
+
+.signin-btn,
+.login-btn {
+    color: $brown;
+    border: 1px solid $brown;
+    padding: 8px 16px;
+    cursor: pointer;
+    &:hover {
+        color: #fff;
+        background: $brown;
     }
 }
