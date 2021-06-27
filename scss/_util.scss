@@ -4,6 +4,9 @@
 .d-flex {
     display: flex;
 }
+.d-inline-block {
+    display: inline-block;
+}
 .d-block {
     display: block;
 }
@@ -94,6 +97,7 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
 .py-7 {
     padding-top: 7px;
     padding-bottom: 7px;
@@ -107,6 +111,11 @@
 .py-14 {
     padding-top: 14px;
     padding-bottom: 14px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .py-20 {
@@ -139,6 +148,10 @@
     padding-bottom: 92px;
 }
 
+.pt-80 {
+    padding-top: 80px;
+}
+
 .pt-94 {
     padding-top: 94px;
 }
@@ -153,6 +166,9 @@
 
 .mt-20 {
     margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
 }
 
 .mb-3 {
@@ -171,7 +187,13 @@
 .mb-20 {
     margin-bottom: 20px;
 }
+.mb-30 {
+    margin-bottom: 30px;
+}
 
+.mb-32 {
+    margin-bottom: 32px;
+}
 .mb-36 {
     margin-bottom: 36px;
 }
@@ -182,6 +204,10 @@
 
 .mb-58 {
     margin-bottom: 58px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
 }
 
 .ml-8 {
@@ -202,9 +228,6 @@
 }
 
 @include pad {
-    .pt-md-40 {
-        padding-top: 40px;
-    }
     .pb-md-106 {
         padding-bottom: 106px;
     }
@@ -254,8 +277,14 @@
     .mb-md-20 {
         margin-bottom: 20px;
     }
+    .mb-md-28 {
+        margin-bottom: 28px;
+    }
     .mb-md-32 {
         margin-bottom: 32px;
+    }
+    .mb-md-40 {
+        margin-bottom: 40px;
     }
 
     .mr-md-0 {

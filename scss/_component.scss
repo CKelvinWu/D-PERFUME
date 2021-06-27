@@ -107,6 +107,7 @@
     width: 219px;
     border-radius: 4px 0 0 4px;
     border: 2px solid $brown;
+    margin-right: -1px;
     outline: none;
 }
 .submit {
@@ -116,7 +117,8 @@
     background: $brown;
     cursor: pointer;
     &:hover {
-        background: lighten($brown, 10%);
+        background: darken($brown, 10%);
+        border-color: darken($brown, 10%);
     }
 }
 

@@ -130,13 +130,20 @@
             max-width: 44%;
         }
     }
-    .fa-heart,
-    .fa-shopping-cart {
-        padding: 2px;
-        color: $brown;
-        &:hover {
-            color: darken($brown, 10%);
-        }
+}
+.add-fav .fa-heart {
+    padding: 2px;
+    color: $brown;
+    &:hover {
+        color: darken($brown, 10%);
+    }
+}
+
+.add-cart .fa-shopping-cart {
+    padding: 2px;
+    color: $brown;
+    &:hover {
+        color: darken($brown, 10%);
     }
 }
 
@@ -195,5 +202,48 @@
     &:hover {
         color: #fff;
         background: $brown;
+    }
+}
+
+.product-imgs {
+    width: 65.77%;
+    @include pad {
+        width: 100%;
+    }
+    .product-img2 {
+        width: 47.94%;
+        @include pad {
+            width: 100%;
+        }
+    }
+    .product-img3 {
+        width: 47.94%;
+        @include pad {
+            width: 100%;
+        }
+    }
+}
+
+.product-info {
+    width: 31.53%;
+    @include pad {
+        width: 100%;
+    }
+    .num {
+        width: 54.3%;
+        border: 1px solid $brown;
+    }
+    .add-cart-btn {
+        color: #fff;
+        text-align: center;
+        width: 45.7%;
+        border: 1px solid $brown;
+        cursor: pointer;
+    }
+    a:hover {
+        i {
+            color: darken($brown, 10%);
+        }
+        color: darken($brown, 10%);
     }
 }
