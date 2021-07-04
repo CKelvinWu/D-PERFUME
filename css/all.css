@@ -130,6 +130,13 @@ input {
           flex-direction: column;
 }
 
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 @media (max-width: 768px) {
   .d-md-flex {
     display: -webkit-box;
@@ -154,13 +161,6 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.flex-row-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
 .justify-content-center {
@@ -366,16 +366,13 @@ input {
 }
 
 @media (max-width: 768px) {
-  .pb-md-106 {
-    padding-bottom: 106px;
+  .py-md-0 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .py-md-40 {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-  .py-md-0 {
-    padding-top: 0;
-    padding-bottom: 0;
   }
   .pt-md-8 {
     padding-top: 8px;
@@ -397,6 +394,9 @@ input {
   }
   .pb-md-40 {
     padding-bottom: 40px;
+  }
+  .pb-md-106 {
+    padding-bottom: 106px;
   }
   .mt-md-8 {
     margin-top: 8px;
@@ -591,6 +591,23 @@ input {
   background: #ac8a46;
 }
 
+.more,
+.forgetPasswd {
+  color: #ac8a46;
+}
+
+.more:hover,
+.forgetPasswd:hover {
+  font-weight: bold;
+}
+
+.sold-out {
+  background: rgba(141, 141, 141, 0.5);
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
 .foot-banner {
   background: url("../images/index10.jpg") center center;
   background-position: center;
@@ -624,7 +641,7 @@ input {
   outline: none;
 }
 
-.submit {
+.subscribeBtn {
   color: #fff;
   border: 2px solid #916000;
   border-radius: 0 4px 4px 0;
@@ -632,7 +649,7 @@ input {
   cursor: pointer;
 }
 
-.submit:hover {
+.subscribeBtn:hover {
   background: #5e3e00;
   border-color: #5e3e00;
 }
@@ -791,21 +808,6 @@ input {
   .content-container .btn {
     width: 100%;
   }
-}
-
-.more {
-  color: #ac8a46;
-}
-
-.more:hover {
-  font-weight: bold;
-}
-
-.sold-out {
-  background: rgba(141, 141, 141, 0.5);
-  height: 100%;
-  color: #fff;
-  text-align: center;
 }
 
 .promote-item {

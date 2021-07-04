@@ -89,6 +89,21 @@
     }
 }
 
+.more,
+.forgetPasswd {
+    color: $lightbrown;
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.sold-out {
+    background: rgba($gray, 0.5);
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
 .foot-banner {
     @include background-img("../images/index10.jpg");
     height: 600px;
@@ -110,7 +125,7 @@
     margin-right: -1px;
     outline: none;
 }
-.submit {
+.subscribeBtn {
     color: #fff;
     border: 2px solid $brown;
     border-radius: 0 4px 4px 0;

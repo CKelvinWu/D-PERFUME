@@ -70,13 +70,6 @@
         }
     }
 }
-.more {
-    @include more;
-}
-
-.sold-out {
-    @include sold-out();
-}
 
 .promote-item {
     height: 540px;
